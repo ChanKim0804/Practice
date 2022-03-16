@@ -3,14 +3,62 @@
 <head>
   <title>WEB1 - 솔로랭크</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .saw {
+      color:gray;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width:160px;
+      margin:0;
+      padding:20px;
+      padding-left:30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns:220px 1fr;
+    }
+    #article{
+      padding:25px
+      padding-up:5px
+    }
+    #grid ul{
+      padding-left:20px;
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DDD4LFFGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DDD4LFFGW');
+</script>
 </head>
 <body>
   <h1><a href="index.html">흥행몬</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">솔로랭크</a></li>
     <li><a href="2.html">의무방어전</a></li>
     <li><a href="3.html">만화가</a></li>
   </ol>
+  <div>
   <h2>솔로랭크</h2>
   <p>
   <img src="골드.jpg" width="400px">
@@ -36,5 +84,28 @@
     <img src="이즈리얼.jpg" width="200px">
     <br>예전부터 원거리 딜러 중 특히나 이즈리얼을 잘 다루는 모습을 보인 바 있음. 그러나 서포터와의 갈등이 매우 잦은 편이고,<br> 오히려 홀로 방치되었을 때 진가를 발휘하는 특이형 원딜러라고 할 수 있음.
   </p>
+  <p>
+      <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web1-ctdqruxegx.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+</div>
+</div>
 </body>
 </html>

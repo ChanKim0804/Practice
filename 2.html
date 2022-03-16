@@ -3,17 +3,62 @@
 <head>
   <title>WEB1 - 의무방어전</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .saw {
+      color:gray;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width:160px;
+      margin:0;
+      padding:20px;
+      padding-left:30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns:220px 1fr;
+    }
+    #article{
+      padding:25px
+      padding-up:5px
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DDD4LFFGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DDD4LFFGW');
+</script>
 </head>
 <body>
   <h1><a href="index.html">흥행몬</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">솔로랭크</a></li>
     <li><a href="2.html">의무방어전</a></li>
     <li><a href="3.html">만화가</a></li>
   </ol>
+  <div>
   <h2>의무방어전</h2>
   <p>
-  <img src="하지마.jpg" width="400px">
+  <img src="하지마.jpg" width="300px" height="400px">
   </p>
   <p>
     경기 의정부시 능곡로에 거주하는 흥행몬은 <strong>매주 금요일마다</strong> 남친으로서의 의무를 다하러 장거리 출장을 다닌다. <br>토요일 또는 일요일 복귀하는 편이다. 그간 어머니에게는 찬이와 시간을 보낸다는 숱한 거짓말을 통해 상황을 <br>모면했으나 <strong>28세</strong>가 된 이후로는 솔직하게 고백하는 것으로 알려져 흥행몬이 성장했음을 알 수 있다.
@@ -21,5 +66,28 @@
   <p>
     흥미로운 점은 흥행몬의 남친으로서의 의무는 오프라인 뿐만 아니라 온라인 상에서도 지켜진다. 롱디중인 흥행몬은<br> 정해진 시간 퇴근 전화를 받고 <strong>주로 협곡</strong>에서 늦은 시간까지 (때로는 강제)데이트를 하는 것으로 알려져 충격을 더하고 있다.
   </p>
+  <p>
+      <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web1-ctdqruxegx.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+</div>
+</div>
 </body>
 </html>
